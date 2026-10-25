@@ -222,7 +222,8 @@ button { cursor: pointer; }
 #duelCanvas { display: block; margin: 14px auto 0; border-radius: 12px; }
 #dayCanvas { display: block; margin: 14px auto 0; border-radius: 12px; }
 /* browser build: day game only, so no collection, no exit */
-.web #btnCollection, .web #btnExit { display: none; }
+.web #btnExit { display: none; }
+.web #btnCollection { visibility: hidden; } /* keeps the HUD centred */
 #duelInput {
   width: 100%; min-height: 52px; margin-top: 14px; padding: 0 14px; border-radius: 14px; border: 2px solid var(--line);
   background: var(--bg); color: var(--ink); font: 600 18px var(--font); letter-spacing: 0.04em; text-transform: uppercase; text-align: center;
