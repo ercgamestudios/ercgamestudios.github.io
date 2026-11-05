@@ -3850,7 +3850,7 @@ select {
       dayAgain: "Tekrar oyna",
       linkCopied: "Bağlantı kopyalandı, arkadaşına yapıştır.",
       soonStores: "Yakında Google Play ve App Store'da",
-      download: "İndir",
+      download: "Google Play'den indir",
       langName: 'Türkçe', tagline: 'Blokları yerleştir, dünyayı keşfet.', play: 'Oyna', resume: 'Devam et', best: 'En iyi',
       collection: 'Koleksiyon', settings: 'Ayarlar', sound: 'Ses', vibration: 'Titreşim', language: 'Dil',
       privacy: 'Gizlilik seçenekleri',
@@ -3866,6 +3866,7 @@ select {
       tiles: 'Çiniler',
       photoDone: '{name} açıldı!',
       nextItem: 'Sıradaki fotoğrafı aç',
+      nextCountry: 'Sıradaki ülke: {name}',
       countryDone: '{name} koleksiyonu tamamlandı! Başka bir ülkeyi keşfet.',
       credits: 'Fotoğraf kaynakları',
       creditsNote: 'Fotoğraflar Wikimedia Commons’tan, belirtilen lisanslarla kullanılmıştır.',
@@ -3878,9 +3879,12 @@ select {
       didYouKnow: 'Biliyor muydun?',
       guess: 'Tahmin et',
       guessTitle: 'Sence bu ne?',
-      guessHint: 'Tek hakkın var. Bilirsen bonus puan!',
+      guessHint: 'Tek hakkın var. Bilirsen fotoğraf açılır ve bonus puan kazanırsın!',
       guessRight: 'Bildin! +{n} puan',
-      guessWrong: 'Olmadı! Doğrusu sürpriz kalsın, açmaya devam et.',
+      guessWrong: 'Olmadı! Doğrusu sürpriz kalsın.',
+      guessAdTitle: 'Yanlış tahmin!',
+      guessAdSub: 'Bu fotoğrafa devam etmek için kısa bir reklam izle. Vazgeçersen fotoğraf baştan başlar.',
+      guessAdWatch: 'Reklam izle, devam et',
       keepGoing: 'Devam et',
       hint: 'İpucu: reklam izle, 8 kare aç',
       almostThere: 'Fotoğraf neredeyse açıldı (%{p}), sadece {left} kare kaldı! Devam et ve sırrı çöz.',
@@ -3971,7 +3975,7 @@ select {
       dayAgain: "Play again",
       linkCopied: "Link copied, paste it to a friend.",
       soonStores: "Coming soon to Google Play and the App Store",
-      download: "Download",
+      download: "Get it on Google Play",
       langName: 'English', tagline: 'Place blocks, discover the world.', play: 'Play', resume: 'Continue', best: 'Best',
       collection: 'Collection', settings: 'Settings', sound: 'Sound', vibration: 'Vibration', language: 'Language',
       privacy: 'Privacy options',
@@ -3987,6 +3991,7 @@ select {
       tiles: 'Tiles',
       photoDone: '{name} revealed!',
       nextItem: 'Reveal the next photo',
+      nextCountry: 'Next country: {name}',
       countryDone: '{name} collection complete! Discover another country.',
       credits: 'Photo credits',
       creditsNote: 'Photos from Wikimedia Commons, used under the licenses shown.',
@@ -3999,9 +4004,12 @@ select {
       didYouKnow: 'Did you know?',
       guess: 'Guess',
       guessTitle: 'What do you think it is?',
-      guessHint: 'One try only. Get it right for bonus points!',
+      guessHint: 'One try only. Get it right to open the photo and win bonus points!',
       guessRight: 'You got it! +{n} points',
-      guessWrong: 'Not quite! We won’t spoil it, keep revealing.',
+      guessWrong: 'Not quite! We won’t spoil it.',
+      guessAdTitle: 'Wrong guess!',
+      guessAdSub: 'Watch a short ad to keep going with this photo. If you give up, the photo starts over.',
+      guessAdWatch: 'Watch an ad, keep going',
       keepGoing: 'Keep going',
       hint: 'Hint: watch an ad to reveal 8 squares',
       almostThere: '{p}% of the photo is revealed, only {left} squares left! Keep going and solve the mystery.',
@@ -4092,7 +4100,7 @@ select {
       dayAgain: "Jugar otra vez",
       linkCopied: "Enlace copiado, pégaselo a un amigo.",
       soonStores: "Muy pronto en Google Play y App Store",
-      download: "Descargar",
+      download: "Descárgalo en Google Play",
       langName: 'Español', tagline: 'Coloca bloques, descubre el mundo.', play: 'Jugar', resume: 'Continuar', best: 'Mejor',
       collection: 'Colección', settings: 'Ajustes', sound: 'Sonido', vibration: 'Vibración', language: 'Idioma',
       privacy: 'Opciones de privacidad',
@@ -4108,6 +4116,7 @@ select {
       tiles: 'Azulejos',
       photoDone: '¡{name} descubierto!',
       nextItem: 'Descubrir la siguiente foto',
+      nextCountry: 'Siguiente país: {name}',
       countryDone: '¡Colección de {name} completa! Descubre otro país.',
       credits: 'Créditos de las fotos',
       creditsNote: 'Fotos de Wikimedia Commons, usadas bajo las licencias indicadas.',
@@ -4120,9 +4129,12 @@ select {
       didYouKnow: '¿Sabías que…?',
       guess: 'Adivina',
       guessTitle: '¿Qué crees que es?',
-      guessHint: 'Solo un intento. ¡Acierta y gana puntos extra!',
+      guessHint: 'Solo un intento. ¡Acierta, abre la foto y gana puntos extra!',
       guessRight: '¡Acertaste! +{n} puntos',
-      guessWrong: '¡Casi! No te lo diremos, sigue descubriendo.',
+      guessWrong: '¡Casi! No te lo diremos.',
+      guessAdTitle: '¡Respuesta incorrecta!',
+      guessAdSub: 'Mira un anuncio corto para seguir con esta foto. Si te rindes, la foto empieza de nuevo.',
+      guessAdWatch: 'Ver anuncio y seguir',
       keepGoing: 'Seguir',
       hint: 'Pista: mira un anuncio y descubre 8 casillas',
       almostThere: 'Ya se ve el {p} % de la foto, ¡solo quedan {left} casillas! Sigue y resuelve el misterio.',
@@ -4213,7 +4225,7 @@ select {
       dayAgain: "Jogar de novo",
       linkCopied: "Link copiado, cole para um amigo.",
       soonStores: "Em breve no Google Play e na App Store",
-      download: "Baixar",
+      download: "Baixe no Google Play",
       langName: 'Português', tagline: 'Encaixe blocos, descubra o mundo.', play: 'Jogar', resume: 'Continuar', best: 'Recorde',
       collection: 'Coleção', settings: 'Configurações', sound: 'Som', vibration: 'Vibração', language: 'Idioma',
       privacy: 'Opções de privacidade',
@@ -4229,6 +4241,7 @@ select {
       tiles: 'Azulejos',
       photoDone: '{name} revelado!',
       nextItem: 'Revelar a próxima foto',
+      nextCountry: 'Próximo país: {name}',
       countryDone: 'Coleção de {name} completa! Descubra outro país.',
       credits: 'Créditos das fotos',
       creditsNote: 'Fotos do Wikimedia Commons, usadas sob as licenças indicadas.',
@@ -4241,9 +4254,12 @@ select {
       didYouKnow: 'Você sabia?',
       guess: 'Adivinhe',
       guessTitle: 'O que você acha que é?',
-      guessHint: 'Só uma chance. Acerte e ganhe pontos extras!',
+      guessHint: 'Só uma chance. Acerte para abrir a foto e ganhar pontos extras!',
       guessRight: 'Acertou! +{n} pontos',
-      guessWrong: 'Quase! Não vamos contar, continue revelando.',
+      guessWrong: 'Quase! Não vamos contar.',
+      guessAdTitle: 'Palpite errado!',
+      guessAdSub: 'Assista a um anúncio curto para continuar nesta foto. Se desistir, a foto recomeça.',
+      guessAdWatch: 'Ver anúncio e continuar',
       keepGoing: 'Continuar',
       hint: 'Dica: assista a um anúncio e revele 8 casas',
       almostThere: '{p}% da foto já apareceu, faltam só {left} casas! Continue e desvende o mistério.',
@@ -4334,7 +4350,7 @@ select {
       dayAgain: "Main lagi",
       linkCopied: "Tautan disalin, tempel ke temanmu.",
       soonStores: "Segera hadir di Google Play dan App Store",
-      download: "Unduh",
+      download: "Unduh di Google Play",
       langName: 'Bahasa Indonesia', tagline: 'Susun balok, jelajahi dunia.', play: 'Main', resume: 'Lanjutkan', best: 'Terbaik',
       collection: 'Koleksi', settings: 'Pengaturan', sound: 'Suara', vibration: 'Getar', language: 'Bahasa',
       privacy: 'Opsi privasi',
@@ -4350,6 +4366,7 @@ select {
       tiles: 'Ubin',
       photoDone: '{name} terbuka!',
       nextItem: 'Buka foto berikutnya',
+      nextCountry: 'Negara berikutnya: {name}',
       countryDone: 'Koleksi {name} lengkap! Jelajahi negara lain.',
       credits: 'Sumber foto',
       creditsNote: 'Foto dari Wikimedia Commons, digunakan sesuai lisensi yang tertera.',
@@ -4362,9 +4379,12 @@ select {
       didYouKnow: 'Tahukah kamu?',
       guess: 'Tebak',
       guessTitle: 'Menurutmu ini apa?',
-      guessHint: 'Hanya satu kesempatan. Tebak benar untuk poin bonus!',
+      guessHint: 'Hanya satu kesempatan. Tebak benar untuk membuka foto dan dapat poin bonus!',
       guessRight: 'Benar! +{n} poin',
-      guessWrong: 'Belum tepat! Kami rahasiakan, terus buka fotonya.',
+      guessWrong: 'Belum tepat! Kami rahasiakan.',
+      guessAdTitle: 'Tebakan salah!',
+      guessAdSub: 'Tonton iklan singkat untuk melanjutkan foto ini. Jika menyerah, foto dimulai dari awal.',
+      guessAdWatch: 'Tonton iklan, lanjutkan',
       keepGoing: 'Lanjut',
       hint: 'Petunjuk: tonton iklan untuk membuka 8 kotak',
       almostThere: '{p}% foto sudah terbuka, tinggal {left} kotak lagi! Lanjutkan dan pecahkan misterinya.',
@@ -4455,7 +4475,7 @@ select {
       dayAgain: "Rejouer",
       linkCopied: "Lien copié, colle-le à un ami.",
       soonStores: "Bientôt sur Google Play et l'App Store",
-      download: "Télécharger",
+      download: "Disponible sur Google Play",
       langName: 'Français', tagline: 'Placez les blocs, découvrez le monde.', play: 'Jouer', resume: 'Continuer', best: 'Record',
       collection: 'Collection', settings: 'Réglages', sound: 'Son', vibration: 'Vibration', language: 'Langue',
       privacy: 'Options de confidentialité',
@@ -4471,6 +4491,7 @@ select {
       tiles: 'Carreaux',
       photoDone: '{name} révélé !',
       nextItem: 'Révéler la photo suivante',
+      nextCountry: 'Pays suivant : {name}',
       countryDone: 'Collection {name} terminée ! Découvrez un autre pays.',
       credits: 'Crédits photo',
       creditsNote: 'Photos de Wikimedia Commons, utilisées selon les licences indiquées.',
@@ -4483,9 +4504,12 @@ select {
       didYouKnow: 'Le saviez-vous ?',
       guess: 'Deviner',
       guessTitle: 'À votre avis, qu’est-ce que c’est ?',
-      guessHint: 'Un seul essai. Trouvez et gagnez des points bonus !',
+      guessHint: 'Un seul essai. Trouvez pour ouvrir la photo et gagner des points bonus !',
       guessRight: 'Bien vu ! +{n} points',
-      guessWrong: 'Raté ! On ne vous dit rien, continuez à révéler.',
+      guessWrong: 'Raté ! On ne vous dit rien.',
+      guessAdTitle: 'Mauvaise réponse !',
+      guessAdSub: 'Regardez une courte pub pour continuer cette photo. Si vous abandonnez, la photo recommence.',
+      guessAdWatch: 'Voir une pub et continuer',
       keepGoing: 'Continuer',
       hint: 'Indice : regardez une pub pour révéler 8 cases',
       almostThere: '{p} % de la photo est révélée, plus que {left} cases ! Continuez et percez le mystère.',
@@ -4576,7 +4600,7 @@ select {
       dayAgain: "Noch einmal",
       linkCopied: "Link kopiert, schick ihn einem Freund.",
       soonStores: "Bald bei Google Play und im App Store",
-      download: "Herunterladen",
+      download: "Jetzt bei Google Play",
       langName: 'Deutsch', tagline: 'Setze Blöcke, entdecke die Welt.', play: 'Spielen', resume: 'Weiterspielen', best: 'Rekord',
       collection: 'Sammlung', settings: 'Einstellungen', sound: 'Ton', vibration: 'Vibration', language: 'Sprache',
       privacy: 'Datenschutzoptionen',
@@ -4592,6 +4616,7 @@ select {
       tiles: 'Fliesen',
       photoDone: '{name} enthüllt!',
       nextItem: 'Nächstes Foto enthüllen',
+      nextCountry: 'Nächstes Land: {name}',
       countryDone: 'Sammlung {name} komplett! Entdecke ein anderes Land.',
       credits: 'Bildnachweise',
       creditsNote: 'Fotos von Wikimedia Commons, verwendet unter den angegebenen Lizenzen.',
@@ -4604,9 +4629,12 @@ select {
       didYouKnow: 'Schon gewusst?',
       guess: 'Raten',
       guessTitle: 'Was glaubst du, ist das?',
-      guessHint: 'Nur ein Versuch. Richtig geraten gibt Bonuspunkte!',
+      guessHint: 'Nur ein Versuch. Richtig geraten öffnet das Foto und gibt Bonuspunkte!',
       guessRight: 'Richtig! +{n} Punkte',
-      guessWrong: 'Leider nicht! Wir verraten nichts, deck weiter auf.',
+      guessWrong: 'Leider nicht! Wir verraten nichts.',
+      guessAdTitle: 'Falsch geraten!',
+      guessAdSub: 'Sieh dir eine kurze Werbung an, um mit diesem Foto weiterzumachen. Wenn du aufgibst, beginnt das Foto von vorn.',
+      guessAdWatch: 'Werbung ansehen, weiter',
       keepGoing: 'Weiter',
       hint: 'Tipp: Werbung ansehen und 8 Felder aufdecken',
       almostThere: '{p} % des Fotos sind aufgedeckt, nur noch {left} Felder! Mach weiter und lüfte das Geheimnis.',
@@ -4697,7 +4725,7 @@ select {
       dayAgain: "العب مجددًا",
       linkCopied: "تم نسخ الرابط، الصقه لصديقك.",
       soonStores: "قريبًا على Google Play و App Store",
-      download: "تنزيل",
+      download: "حمّله من Google Play",
       langName: 'العربية', tagline: 'ضع القطع واكتشف العالم.', play: 'العب', resume: 'متابعة', best: 'الأفضل',
       collection: 'المجموعة', settings: 'الإعدادات', sound: 'الصوت', vibration: 'الاهتزاز', language: 'اللغة',
       privacy: 'خيارات الخصوصية',
@@ -4713,6 +4741,7 @@ select {
       tiles: 'البلاط',
       photoDone: 'انكشفت {name}!',
       nextItem: 'اكشف الصورة التالية',
+      nextCountry: 'البلد التالي: {name}',
       countryDone: 'اكتملت مجموعة {name}! اكتشف بلدًا آخر.',
       credits: 'مصادر الصور',
       creditsNote: 'الصور من ويكيميديا كومنز، مستخدمة وفق التراخيص المذكورة.',
@@ -4725,9 +4754,12 @@ select {
       didYouKnow: 'هل تعلم؟',
       guess: 'خمّن',
       guessTitle: 'ما رأيك، ما هذا؟',
-      guessHint: 'محاولة واحدة فقط. أصب لتحصل على نقاط إضافية!',
+      guessHint: 'محاولة واحدة فقط. أصب لتكشف الصورة كاملة وتحصل على نقاط إضافية!',
       guessRight: 'أصبت! +{n} نقطة',
-      guessWrong: 'ليس تمامًا! لن نكشف السر، واصل الكشف.',
+      guessWrong: 'ليس تمامًا! لن نكشف السر.',
+      guessAdTitle: 'تخمين خاطئ!',
+      guessAdSub: 'شاهد إعلانًا قصيرًا لمتابعة هذه الصورة. إذا استسلمت تبدأ الصورة من جديد.',
+      guessAdWatch: 'شاهد إعلانًا وتابع',
       keepGoing: 'متابعة',
       hint: 'تلميح: شاهد إعلانًا لكشف 8 مربعات',
       almostThere: 'انكشف {p}% من الصورة، وبقي {left} مربعًا فقط! واصل واكشف السر.',
@@ -4818,7 +4850,7 @@ select {
       dayAgain: "Gioca ancora",
       linkCopied: "Link copiato, incollalo a un amico.",
       soonStores: "Presto su Google Play e App Store",
-      download: "Scarica",
+      download: "Scaricalo su Google Play",
       langName: "Italiano",
       tagline: "Piazza i blocchi, scopri il mondo.",
       play: "Gioca",
@@ -4854,6 +4886,7 @@ select {
       tiles: "Piastrelle",
       photoDone: "{name} svelato!",
       nextItem: "Svela la prossima foto",
+      nextCountry: "Prossimo paese: {name}",
       countryDone: "Collezione {name} completata! Scopri un altro paese.",
       credits: "Crediti fotografici",
       creditsNote: "Foto da Wikimedia Commons, usate secondo le licenze indicate.",
@@ -4866,9 +4899,12 @@ select {
       didYouKnow: "Lo sapevi?",
       guess: "Indovina",
       guessTitle: "Secondo te cos’è?",
-      guessHint: "Un solo tentativo. Indovina e vinci punti bonus!",
+      guessHint: "Un solo tentativo. Indovina per aprire la foto e vincere punti bonus!",
       guessRight: "Esatto! +{n} punti",
-      guessWrong: "Non proprio! Non ti diciamo nulla, continua a svelare.",
+      guessWrong: "Non proprio! Non ti diciamo nulla.",
+      guessAdTitle: "Risposta sbagliata!",
+      guessAdSub: "Guarda un breve video per continuare con questa foto. Se ti arrendi, la foto ricomincia.",
+      guessAdWatch: "Guarda il video e continua",
       keepGoing: "Continua",
       hint: "Aiuto: guarda un video per svelare 8 caselle",
       almostThere: "Il {p}% della foto è svelato, mancano solo {left} caselle! Continua e risolvi il mistero.",
@@ -4959,7 +4995,7 @@ select {
       dayAgain: "もう一度遊ぶ",
       linkCopied: "リンクをコピーしました。友だちに貼り付けてね。",
       soonStores: "まもなく Google Play と App Store で配信",
-      download: "ダウンロード",
+      download: "Google Play でダウンロード",
       langName: "日本語",
       tagline: "ブロックを置いて、世界を発見しよう。",
       play: "プレイ",
@@ -4995,6 +5031,7 @@ select {
       tiles: "タイル",
       photoDone: "{name}が現れた！",
       nextItem: "次の写真を開く",
+      nextCountry: "次の国：{name}",
       countryDone: "{name}のコレクション完成！ほかの国も発見しよう。",
       credits: "写真クレジット",
       creditsNote: "写真はWikimedia Commonsより、表示のライセンスに従って使用しています。",
@@ -5007,9 +5044,12 @@ select {
       didYouKnow: "知ってた？",
       guess: "当てる",
       guessTitle: "これは何だと思う？",
-      guessHint: "チャンスは1回。当たればボーナス！",
+      guessHint: "チャンスは1回。当たれば写真が全部開いてボーナス！",
       guessRight: "正解！ +{n} ポイント",
-      guessWrong: "残念！答えはまだ秘密。開き続けよう。",
+      guessWrong: "残念！答えはまだ秘密。",
+      guessAdTitle: "不正解！",
+      guessAdSub: "この写真を続けるには短い広告を見てね。あきらめると写真は最初からになります。",
+      guessAdWatch: "広告を見て続ける",
       keepGoing: "続ける",
       hint: "ヒント：広告を見て8マス開く",
       almostThere: "写真の{p}%が公開、残りあと{left}マス！続けて謎を解こう。",
@@ -5100,7 +5140,7 @@ select {
       dayAgain: "다시 하기",
       linkCopied: "링크를 복사했어요. 친구에게 붙여 넣으세요.",
       soonStores: "곧 Google Play와 App Store에서 만나요",
-      download: "다운로드",
+      download: "Google Play에서 다운로드",
       langName: "한국어",
       tagline: "블록을 놓고 세계를 발견하세요.",
       play: "플레이",
@@ -5136,6 +5176,7 @@ select {
       tiles: "타일",
       photoDone: "{name} 공개!",
       nextItem: "다음 사진 열기",
+      nextCountry: "다음 나라: {name}",
       countryDone: "{name} 컬렉션 완성! 다른 나라도 발견해 보세요.",
       credits: "사진 출처",
       creditsNote: "사진은 Wikimedia Commons에서 표시된 라이선스에 따라 사용했습니다.",
@@ -5148,9 +5189,12 @@ select {
       didYouKnow: "알고 있었나요?",
       guess: "맞히기",
       guessTitle: "이건 무엇일까요?",
-      guessHint: "기회는 한 번. 맞히면 보너스 점수!",
+      guessHint: "기회는 한 번뿐. 맞히면 사진이 모두 열리고 보너스 점수!",
       guessRight: "정답! +{n}점",
-      guessWrong: "아쉬워요! 정답은 비밀, 계속 열어 보세요.",
+      guessWrong: "아쉬워요! 정답은 비밀이에요.",
+      guessAdTitle: "틀렸어요!",
+      guessAdSub: "이 사진을 계속하려면 짧은 광고를 보세요. 포기하면 사진이 처음부터 다시 시작돼요.",
+      guessAdWatch: "광고 보고 계속하기",
       keepGoing: "계속하기",
       hint: "힌트: 광고 보고 8칸 열기",
       almostThere: "사진의 {p}%가 공개됐어요. 남은 칸은 {left}개뿐! 계속해서 비밀을 풀어요.",
@@ -5228,7 +5272,7 @@ select {
   'use strict';
 
   var CONFIG = {
-    TEST: true, // Yayından önce false yap / set false before release
+    TEST: false, // Gerçek reklamlar (üretim, 1.7.1). Denemek için true yap / true = Google test ads
     ids: {
       android: {
         banner: 'ca-app-pub-8047750583221680/8308960697',
@@ -5409,7 +5453,7 @@ select {
   'use strict';
   var C = window.MosaicaCore, PT = window.MosaicaPatterns, TH = window.MosaicaThemes, I18N = window.MosaicaI18N, Ads = window.MosaicaAds;
   var N = C.N;
-  var VERSION = '1.7.0';
+  var VERSION = '1.7.2';
   var KEY = 'mosaica.v1.';
   var GUESS_AT = 24, GUESS_POINTS = 500, HINT_CELLS = 8, TEASE_AT = 32; // cells revealed / points
   var GOLD_CHANCE = 0.08, GOLD_BONUS = 1000;
@@ -6018,15 +6062,16 @@ select {
   /* ---------- move limit ---------- */
   function adsForExtension() { return (prog.extensions | 0) === 0 ? 1 : 2; }
 
-  /* kind 'moves': the photo's move budget ran out. kind 'dry': hard mode, DRY_LIMIT moves without a new square. */
+  /* kind 'moves': the photo's move budget ran out. kind 'dry': hard mode, DRY_LIMIT moves without a new square.
+     kind 'guess': a wrong guess; the photo goes on only after an ad. */
   var offerKind = 'moves';
   function showOutOfMoves(kind) {
-    offerKind = kind === 'dry' ? 'dry' : 'moves';
-    var n = offerKind === 'dry' ? 1 : adsForExtension();
-    $('movesTitle').textContent = offerKind === 'dry' ? t('dryTitle', { n: fmt(DRY_LIMIT) }) : t('outOfMoves');
-    $('movesSub').textContent = offerKind === 'dry' ? t('drySub', { n: fmt(DRY_LIMIT) })
+    offerKind = kind === 'dry' || kind === 'guess' ? kind : 'moves';
+    var n = offerKind === 'moves' ? adsForExtension() : 1;
+    $('movesTitle').textContent = offerKind === 'guess' ? t('guessAdTitle') : offerKind === 'dry' ? t('dryTitle', { n: fmt(DRY_LIMIT) }) : t('outOfMoves');
+    $('movesSub').textContent = offerKind === 'guess' ? t('guessAdSub') : offerKind === 'dry' ? t('drySub', { n: fmt(DRY_LIMIT) })
       : t('outOfMovesSub', { p: fmt(Math.round(revealedCount() / 64 * 100)) });
-    $('btnMoreMoves').querySelector('span').textContent = offerKind === 'dry' ? t('dryWatch')
+    $('btnMoreMoves').querySelector('span').textContent = offerKind === 'guess' ? t('guessAdWatch') : offerKind === 'dry' ? t('dryWatch')
       : t(n === 1 ? 'watchForMoves1' : 'watchForMovesN', { n: fmt(n), m: fmt(EXTRA_MOVES) });
     $('btnMoreMoves').disabled = false;
     $('movesNote').textContent = '';
@@ -6037,19 +6082,36 @@ select {
   /* After a game-over screen the photo may still be out of moves. */
   function checkMoves() {
     if (state.over) return;
-    if (hard() && state.dry >= DRY_LIMIT) { busy = true; setTimeout(function () { showOutOfMoves('dry'); }, 300); }
+    if (checkPhotoDone()) return;
+    if (prog.guessAd) { busy = true; setTimeout(function () { showOutOfMoves('guess'); }, 300); }
+    else if (hard() && state.dry >= DRY_LIMIT) { busy = true; setTimeout(function () { showOutOfMoves('dry'); }, 300); }
     else if (prog.movesLeft <= 0) { busy = true; setTimeout(showOutOfMoves, 300); }
+  }
+
+  /* A photo left fully open (the app was closed on the done screen, or before it came up) finishes now. */
+  function checkPhotoDone() {
+    if (duel || state.over || !$('ovPattern').hidden || !prog.revealed.every(Boolean)) return false;
+    busy = true;
+    setTimeout(function () { busy = true; showPatternDone(!C.anyFits(state.board, state.tray)); }, 400);
+    return true;
   }
 
   async function buyMoves() {
     var btn = $('btnMoreMoves');
     btn.disabled = true;
     $('movesNote').textContent = t('adLoading');
-    var dry = offerKind === 'dry';
-    var ok = await Ads.watchRewarded(dry ? 1 : adsForExtension(), { test: t('testAd') });
+    var dry = offerKind === 'dry', guess = offerKind === 'guess';
+    var ok = await Ads.watchRewarded(dry || guess ? 1 : adsForExtension(), { test: t('testAd') });
     btn.disabled = false;
     $('movesNote').textContent = '';
     if (!ok) { $('movesNote').textContent = t('adFailed'); return; }
+    if (guess) {
+      prog.guessAd = false; saveProgress();
+      closeOverlay('ovMoves');
+      busy = false; markDirty();
+      checkMoves();
+      return;
+    }
     if (dry) state.dry = 0;
     else { prog.extensions = (prog.extensions | 0) + 1; prog.movesLeft = EXTRA_MOVES; }
     saveProgress(); saveGame(); updateHud();
@@ -6072,7 +6134,7 @@ select {
     ['ovMoves', 'ovGameOver', 'ovGuess'].forEach(function (id) { if (!$(id).hidden) closeOverlay(id); });
     prog.revealed = new Array(64).fill(0);
     prog.movesLeft = MOVE_LIMIT; prog.extensions = 0;
-    prog.guessed = false; prog.hinted = false;
+    prog.guessed = false; prog.hinted = false; prog.guessAd = false; prog.doneShown = false;
     revealAt.fill(0);
     saveProgress();
     buildPatternCanvases();
@@ -6152,8 +6214,11 @@ select {
         progress.daily.last = today;
       }
     }
+    // shown again after a restart: the bonus and the photo count were already given
+    var again = !!prog.doneShown;
+    prog.doneShown = true;
     var golden = !!prog.golden;
-    if (golden) {
+    if (golden && !again) {
       if (!Array.isArray(prog.gold)) prog.gold = [];
       if (prog.gold.indexOf(idx) < 0) prog.gold.push(idx);
       state.score += GOLD_BONUS;
@@ -6161,7 +6226,7 @@ select {
       saveGame(); updateHud();
     }
     saveProgress();
-    if (TH.isPhoto(th)) { stats.photos++; saveStats(); }
+    if (TH.isPhoto(th) && !again) { stats.photos++; saveStats(); }
     Sfx.done(); haptic('medium');
     var cv = $('doneCanvas'), sz = Math.round(Math.min(320, window.innerWidth * 0.7));
     cv.width = cv.height = Math.round(sz * L.dpr); cv.style.width = cv.style.height = sz + 'px';
@@ -6183,7 +6248,10 @@ select {
     var fct = TH.fact(th, idx, lang);
     $('doneFact').hidden = !fct;
     $('doneFactText').textContent = fct;
-    $('btnNext').textContent = isDaily ? t('dailyBack') : TH.isPhoto(th) ? t('nextItem') : t('next');
+    // a finished country moves on to the next country that still has photos to open
+    var nextTh = complete && TH.isPhoto(th) ? nextCountry(th) : null;
+    $('btnNext').textContent = isDaily ? t('dailyBack') : nextTh ? t('nextCountry', { name: (themeFlag(nextTh) + ' ' + themeName(nextTh)).trim() })
+      : TH.isPhoto(th) ? t('nextItem') : t('next');
     $('btnDoneTheme').hidden = !complete;
     function advance() {
       closeOverlay('ovPattern');
@@ -6195,21 +6263,35 @@ select {
       } else {
         prog.index = nextIndex(th, prog);
         prog.revealed = new Array(64).fill(0);
-        prog.guessed = false; prog.hinted = false;
+        prog.guessed = false; prog.hinted = false; prog.guessAd = false; prog.doneShown = false;
         prog.movesLeft = MOVE_LIMIT; prog.extensions = 0;
         prog.golden = TH.isPhoto(th) && Math.random() < GOLD_CHANCE;
         revealAt.fill(0);
         saveProgress();
-        buildPatternCanvases(); updateHud(); markDirty();
+        if (nextTh) {
+          switchTheme(nextTh);
+          addFloat((themeFlag(nextTh) + ' ' + themeName(nextTh)).trim(), L.bx + L.size / 2, L.by + L.size * 0.4, Math.round(L.cell * 0.5), theme.gold, 200, 2000);
+        } else buildPatternCanvases();
+        updateHud(); markDirty();
         if (prog.golden) addFloat(t('goldenStart'), L.bx + L.size / 2, L.by + L.size / 2, Math.round(L.cell * 0.42), theme.gold, 200, 2200);
       }
       busy = false;
       if (stuckAfter || !C.anyFits(state.board, state.tray)) { busy = true; setTimeout(gameOver, 300); }
-      else afterPhoto();
+      else if (!checkPhotoDone()) afterPhoto();
     }
     $('btnNext').onclick = advance;
     $('btnDoneTheme').onclick = function () { advance(); if (!state.over && !busy) openThemePicker(); };
     openOverlay('ovPattern');
+  }
+
+  /* Next country after th (in list order) with a photo not collected yet; null when every country is done. */
+  function nextCountry(th) {
+    var ids = TH.ids, at = ids.indexOf(th);
+    for (var k = 1; k < ids.length; k++) {
+      var id = ids[(at + k) % ids.length], tp = progress.themes[id];
+      if (TH.isPhoto(id) && id !== 'daily' && (!tp || !Array.isArray(tp.collection) || tp.collection.length < TH.count(id))) return id;
+    }
+    return null;
   }
 
   /* Next item: the first one not collected yet, else simply the next in order. */
@@ -6241,6 +6323,7 @@ select {
     revealAt.fill(0);
     saveProgress();
     buildPatternCanvases(); updateHud(); renderStartMedallion(); renderStartButtons(); markDirty();
+    if (!busy) checkPhotoDone();
   }
 
   function openThemePicker() {
@@ -6362,6 +6445,7 @@ select {
         if (prog.guessed) return;
         prog.guessed = true; saveProgress();
         box.querySelectorAll('button').forEach(function (x) { x.disabled = true; });
+        busy = true; // the photo finishes, or waits for an ad
         if (o.right) {
           b.classList.add('right');
           var gp = GUESS_POINTS * (prog.golden ? 2 : 1);
@@ -6369,15 +6453,26 @@ select {
           if (state.score > best) { best = state.score; store(bestKey(), best); }
           $('guessResult').textContent = t('guessRight', { n: fmt(gp) });
           Sfx.clear(2, 3); haptic('medium');
+          // a right guess opens the whole photo, square by square from the top
+          var tn = now(), k = 0;
+          for (var i = 0; i < 64; i++) if (!prog.revealed[i]) { prog.revealed[i] = 1; revealAt[i] = tn + 400 + k++ * 18; }
+          saveProgress();
           addFloat('+' + fmt(gp), L.bx + L.size / 2, L.by + L.size / 2, Math.round(L.cell * 0.8), theme.gold, 300, 1200);
+          setTimeout(function () {
+            if (!$('ovGuess').hidden) closeOverlay('ovGuess');
+            showPatternDone(!C.anyFits(state.board, state.tray));
+          }, 1500 + k * 18);
         } else {
           b.classList.add('wrong');
           $('guessResult').textContent = t('guessWrong');
           Sfx.drop(); haptic('light');
+          prog.guessAd = true; saveProgress();
+          setTimeout(function () {
+            if (!$('ovGuess').hidden) closeOverlay('ovGuess');
+            showOutOfMoves('guess');
+          }, 1300);
         }
         saveGame(); updateHud(); markDirty();
-        $('btnGuessClose').hidden = false;
-        $('btnGuessClose').focus({ preventScroll: true });
       });
       box.appendChild(b);
     });
@@ -6777,7 +6872,7 @@ select {
 
   /* ---------- day game: the same seeded game for everyone on a date, a score to beat, shared as a link ---------- */
   var IS_WEB = !!window.MOXEN_WEB;         // the browser build (web-dist/oyun): day game only, no ads
-  var STORE_LIVE = false;                  // true once Moxen is in the stores: "Soon" becomes a download link
+  var STORE_LIVE = true;                   // Moxen is on Google Play: the web build shows a download link
   var DAY_URL = 'https://ercgamestudios.github.io/oyun/'; // what the app shares: the GitHub Pages copy of the web build
 
   function dayUrl(day, score) {
